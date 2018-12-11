@@ -11,7 +11,7 @@ import { AuthService } from '../auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  model: ILogin = { userid: "admin", password: "admin123" };
+  model: ILogin = { userid: "rafael", password: "1234" };
   loginForm: FormGroup;
   message: string;
   returnUrl: string;
@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
   // convenience getter for easy access to form fields
   get f() { return this.loginForm.controls; }
 
-  
+
   login() {
 
     // stop here if form is invalid
@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
       else{
         this.message = "Please check your userid and password";
       }
-    }    
+    }
 }
 
 }
